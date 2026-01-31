@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>STUHOME - Tìm phòng</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Danh sách phòng trọ</h1>
+
+    <div class="filter">
+      <select id="district">
+        <option value="">Chọn quận</option>
+        <option value="1">Quận 1</option>
+        <option value="7">Quận 7</option>
+        <option value="Bình Thạnh">Bình Thạnh</option>
+      </select>
+
+      <input type="number" id="maxPrice" placeholder="Giá tối đa (VNĐ)" />
+      <button onclick="filterRoom()">Tìm phòng</button>
+    </div>
+
+    <div id="roomList" class="room-list"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
